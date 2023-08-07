@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 212, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.emailalready {
+  position: absolute;
+  background-color: #e74c3c;
+  top: 0;
+  display: none;
+  width: 100%;
+}
+.emailalready p {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  font-family: inherit;
+}
+.usernamealready {
+  position: absolute;
+  background-color: #e74c3c;
+  top: 0;
+  display: none;
+  width: 100%;
+}
+.usernamealready p {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  font-family: inherit;
+}
+
+.successreg {
+  background-color: #2ecc71;
+  position: fixed;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+
+  transition: 0s, 0.5s linear;
+}
+.pregsuccess {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  font-family: inherit;
+  font-weight: 600;
+}
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 500px;
+  max-width: 100%;
+}
+.already {
+  font-family: "Roboto Slab", sans-serif;
+  padding-left: 20px;
+  font-size: 0.8rem;
+}
+.already a {
+  text-decoration: none;
+  color: rgb(5, 169, 202);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.already a:hover {
+  color: rgba(0, 212, 255, 1);
+}
+.header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  padding: 10px;
+  width: 99%;
+}
+
+#ipass {
+  visibility: visible;
+}
+
+#icon {
+  visibility: visible;
+  right: 430px;
+}
+.form-control i {
+  position: absolute;
+  top: 16px;
+  right: 50px;
+  visibility: hidden;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.form button {
+  background-color: rgb(5, 169, 202);
+  border: 2px solid rgb(5, 169, 202);
+  border-radius: 4px;
+  color: white;
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+.form button:hover {
+  background-color: rgba(0, 212, 255, 1);
+}
+.form-control.success input {
+  border-color: #2ecc71;
+}
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+}
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}

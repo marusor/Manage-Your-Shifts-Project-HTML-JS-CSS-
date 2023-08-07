@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <style>
+      @import url(./registration.css);
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f6634b4444.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./registration.js" defer></script>
+  </head>
+  <body>
+    <div class="emailalready already" id="emailalready">
+      <p>Email already exists</p>
+    </div>
+    <div class="usernamealready already" id="usernamealready">
+      <p>Username already exists</p>
+    </div>
+    <div class="container">
+      <div class="header">
+        <h2>Registration</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            autocomplete="off"
+            type="text"
+            id="email"
+            placeholder="Enter your Email"
+          />
+          <i id="icon" class="fa-solid fa-envelope"></i>
+
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            autocomplete="off"
+            type="text"
+            id="username"
+            placeholder="Enter your Username"
+          />
+          <i id="icon" class="fa-solid fa-face-grin-wide"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            autocomplete="off"
+            type="password"
+            id="password"
+            class="password"
+            placeholder="Enter your Password"
+          />
+          <i id="icon" class="fa-solid fa-lock"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <i id="ipass" class="uil uil-eye-slash showHidePw"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            autocomplete="off"
+            type="password"
+            class="password"
+            id="password2"
+            placeholder="Confirm Password"
+          />
+          <i id="ipass" class="uil uil-eye-slash showHidePw"></i>
+          <i id="icon" class="fa-solid fa-lock-open"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            autocomplete="off"
+            type="text"
+            id="fname"
+            placeholder="Enter your First Name"
+          />
+          <i id="icon" class="fa-regular fa-id-card"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            autocomplete="off"
+            type="text"
+            id="lname"
+            placeholder="Enter your Last Name"
+          />
+          <i id="icon" class="fa-regular fa-id-card"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            autocomplete="off"
+            type="text"
+            id="age"
+            placeholder="Enter your Age"
+          />
+          <i id="icon" class="fa-sharp fa-solid fa-calendar-days"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <button id="button" type="button">Register</button>
+      </form>
+      <p class="already">
+        Already registered? Press here to
+        <a href="../login/login.html">Log in</a>
+      </p>
+    </div>
+    <!-- <div class="messagecontainer"> -->
+    <div id="registrationsuccess" class="successreg">
+      <p class="pregsuccess">Registration Successfull</p>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>

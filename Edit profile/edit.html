@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Profile</title>
+    <style>
+      @import url(./edit.css);
+    </style>
+    <!-- <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/f6634b4444.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./edit.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <div class="logoutdiv" id="logoutdiv">
+      <p class="logoutp">Your session has expired. Please log back in.</p>
+      <button class="logoutbtn" id="logoutbtn">Back to Login Page</button>
+    </div>
+    <div class="container">
+      <div class="header">
+        <h2>Update details</h2>
+      </div>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for=""></label>
+          <input type="text" id="email" placeholder="Enter your Email" />
+          <i id="icon" class="fa-solid fa-envelope"></i>
+
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input type="text" id="username" placeholder="Enter your Username" />
+          <i id="icon" class="fa-solid fa-face-grin-wide"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input
+            type="password"
+            id="password"
+            class="password"
+            placeholder="Enter your Password"
+          />
+          <i id="icon" class="fa-solid fa-lock"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <i id="ipass" class="uil uil-eye-slash showHidePw"></i>
+
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for=""></label>
+          <input type="text" id="fname" placeholder="Enter your First Name" />
+          <i id="icon" class="fa-regular fa-id-card"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input type="text" id="lname" placeholder="Enter your Last Name" />
+          <i id="icon" class="fa-regular fa-id-card"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for=""></label>
+          <input type="text" id="age" placeholder="Enter your Age" />
+          <i id="icon" class="fa-sharp fa-solid fa-calendar-days"></i>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+
+          <small>Error message</small>
+        </div>
+        <button id="button" type="button">Update Details</button>
+      </form>
+    </div>
+
+    <div id="success-message" class="success-message">
+      <p class="smessage">Your details have been updated successfully</p>
+    </div>
+  </div>
+  <footer class="footer">
+    <a href="../Add shift/addshift.html">My Shifts</a>
+    <a href="../Homepage/homepage.html">Home</a>
+      <a href="../login/login.html">Logout</a>
+  </footer>
+</div>
+  </body>
+</html>

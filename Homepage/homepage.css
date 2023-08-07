@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(55, 47, 215) 5%,
+    rgba(233, 195, 186, 1) 24%,
+    rgba(214, 145, 48, 1) 71%,
+    rgba(215, 202, 160, 1) 82%,
+    rgba(0, 212, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1rem;
+  height: 100vh;
+}
+
+.overlay {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: fill;
+}
+.logoutdiv {
+  visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 100ms ease-in-out;
+  position: fixed;
+  width: 100%;
+  background-color: #606060;
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+  gap: 2rem;
+}
+.logoutp {
+  color: #fff;
+  font-size: 2rem;
+}
+.logoutbtn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 10px;
+}
+.logoutbtn:hover {
+  background-color: #fff;
+  color: #606060;
+}
+
+.success-message {
+  width: 100%;
+  position: fixed;
+  background-color: #e74c3c;
+  bottom: 0;
+  /* height: 2.5rem; */
+
+  opacity: 0;
+  transition: 0s, 0.4s ease-in-out;
+}
+/* .success-message:hover {
+  opacity: 1;
+} */
+.smessage {
+  text-align: center;
+  color: white;
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+.search-container {
+  margin-bottom: 0.8rem;
+}
+.container-wrapper {
+  visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bestmonths {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 6rem;
+  margin-bottom: 5rem;
+}
+p input {
+  background-color: transparent;
+}
+.gold {
+  color: gold;
+}
+
+p input:focus {
+  outline: none;
+}
+p input {
+  width: 15rem;
+  font-size: 1.5rem;
+  border: none;
+}
+p {
+  display: flex;
+  gap: 1rem;
+}
+p i {
+  font-size: 2rem;
+}
+.bestmonth-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.wrapper {
+  display: flex;
+
+  padding-top: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.logout2 {
+  border: none;
+  cursor: pointer;
+}
+.firstmonth {
+  font-size: 2rem;
+  font-family: "Alpha Slab One", cursive;
+  font-weight: 700;
+  /* cursor: pointer; */
+}
+.firstmonth i {
+  margin-top: 0.5rem;
+}
+.firstmonth i:hover {
+  color: rgba(0, 0, 0, 0.245);
+}
+.firstmonth input {
+  margin-top: 0.5rem;
+  width: 15rem;
+  height: 2rem;
+  font-family: "Alpha Slab One", cursive;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+.firstmonth input:hover {
+  color: #cecbcb;
+}
+.searchBtn {
+  cursor: pointer;
+  width: 5rem;
+}
+.searchBtn:hover {
+  background-color: white;
+}
+.edit {
+  cursor: pointer;
+  display: none;
+}
+img {
+  width: 200px;
+  height: 100px;
+  margin: 30px;
+  position: sticky;
+}
+.hello {
+  padding-top: 30px;
+  font-weight: 600;
+}
+.logout {
+  border: none;
+  cursor: pointer;
+}
+
+#hellousername {
+  background-color: transparent;
+  background: transparent;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.25rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
+  width: 8rem;
+}
+.header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header a {
+  padding-top: 30px;
+  padding-left: 30px;
+
+  color: black;
+  font-size: 1rem;
+  font-family: "Roboto Slab", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header a:hover {
+  color: rgba(0, 0, 0, 0.245);
+}
+button {
+  background-color: transparent;
+  font-family: "Roboto Slab", sans-serif;
+  border-radius: 5px;
+}
+
+input {
+  height: 20px;
+  border-radius: 5px;
+}
+textarea {
+  border-radius: 5px;
+}
+select {
+  border-radius: 5px;
+}
+
+.footer a {
+  text-decoration: none;
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Cedarville Cursive", sans-serif;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #cecbcb;
+}
+
+small {
+  display: flex;
+  justify-content: center;
+}
+
+.tablediv {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.178);
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 2.5rem;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 99;
+}
+
+.dateflex {
+  margin-bottom: 20px;
+}
+
+table,
+th,
+tr,
+th,
+td {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.plus {
+  border: none;
+  font-weight: 400;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.selected {
+  background-color: #fff;
+}
+.plus:hover {
+  color: rgba(0, 0, 0, 0.245);
+}
+tr:hover {
+  background-color: #fff;
+}
+
+.editBtn {
+  cursor: pointer;
+  width: 8rem;
+}
+
+.editBtn:hover {
+  background-color: #fff;
+}
+.ed .add {
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 8rem;
+}
+
+.add:hover {
+  background-color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+.logo {
+  position: fixed;
+}
+.logo img {
+  background-color: transparent;
+}
+
+svg {
+  width: 300px;
+  height: 300px;
+}
+
+.form-control small {
+  visibility: hidden;
+
+  bottom: 0;
+  left: 10px;
+}
+.form-control {
+  padding-top: 15px;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* progress bar */
+.loading-container {
+  border-radius: 8px;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  row-gap: 30px;
+}
+
+.loading {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: conic-gradient(rgba(0, 212, 255, 1) 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading::before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progress {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(0, 212, 255, 1);
+}
+.text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #606060;
+}
+#hellousername {
+  padding-bottom: 2rem;
+}
+.wagelocation {
+  padding-bottom: 25px;
+}
+@media only screen and (max-width: 1630px) {
+  img {
+    width: 100px;
+    height: 50px;
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .hello {
+    color: transparent;
+  }
+  #hellousername {
+    font-size: 1rem;
+    width: 5rem;
+  }
+  .wrapper {
+    gap: 0px;
+  }
+  p {
+    gap: 0px;
+  }
+}

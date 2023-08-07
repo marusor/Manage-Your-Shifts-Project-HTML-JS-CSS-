@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <style>
+      @import url(homepage.css);
+    </style>
+    <script src="homepage.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f6634b4444.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="noscroll">
+    <div class="overlay" id="overlay"></div>
+    <div class="logoutdiv" id="logoutdiv">
+      <p class="logoutp">Your session has expired. Please log back in.</p>
+      <button class="logoutbtn" id="logoutbtn">Back to Login Page</button>
+    </div>
+    <div class="logo">
+      <img src="./logo-no-background.png" />
+    </div>
+    <div class="page-container">
+      <header class="header">
+        <a href="../Add shift/addshift.html">My Shifts</a>
+        <a href="../Edit profile/edit.html">Edit Profile</a>
+        <button class="plus" id="plus"><i class="fa-solid fa-plus"></i></button>
+        <p class="hello">Hello <input readonly id="hellousername" /></p>
+        <button class="logout" id="logout">
+          <a href="../login/login.html">Logout</a>
+        </button>
+      </header>
+      <div class="container-wrapper" id="container-wrapper">
+        <div class="wrapper" id="wrapper">
+          <div class="form-control dateflex">
+            <input type="date" id="date" />
+          </div>
+
+          <div class="form-control">
+            <input type="time" id="start" step="900" />
+            <input type="time" id="end" step="900" />
+            <br />
+            <small id="small">Error Message</small>
+          </div>
+          <div class="form-control wagelocation">
+            <select id="wage">
+              <option value="0">Pay Type</option>
+              <option value="1">Normal Shift</option>
+              <option value="1.5">Overtime</option>
+              <option value="2">Holidays</option>
+            </select>
+            <select id="location">
+              <option value="0">Workplace</option>
+              <option value="Oradea">Oradea</option>
+              <option value="Timisoara">Timisoara</option>
+              <option value="Bucuresti">Bucuresti</option>
+            </select>
+          </div>
+
+          <button class="add" id="entry">Add New Shift</button>
+          <div class="loading-container" id="loading-container">
+            <div class="loading">
+              <span class="progress">0%</span>
+            </div>
+            <span class="text">LOADING</span>
+          </div>
+        </div>
+        <div class="search-container">
+          <input
+            type="search"
+            id="search"
+            placeholder="Search by month or location"
+          />
+          <button id="searchBtn" class="searchBtn">Search</button>
+        </div>
+        <button id="editBtn" class="editBtn">Update details</button>
+      </div>
+
+      <div class="table-container">
+        <div class="tablediv">
+          <table class="table" id="display">
+            <tr>
+              <th>Date</th>
+              <th>Start of the Shift</th>
+              <th>End of the shift</th>
+              <th>Wage/Hour</th>
+              <th>Workplace</th>
+              <th>Total profit</th>
+              <th>Edit</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <button class="edit" id="edit">
+        <i class="fa-solid fa-pen-to-square"></i>
+      </button>
+      <div class="bestmonth-container">
+        <div class="bestmonths">
+          <p class="firstmonth">
+            Best Month :
+            <input id="firstmonth" type="text" readonly />
+            <i class="fa-solid fa-trophy gold"></i>
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <a href="../Add shift/addshift.html">My Shifts</a>
+        <a href="../Edit profile/edit.html">Edit Profile</a>
+
+        <button class="logout2" id="logout2">
+          <a href="../login/login.html">Logout</a>
+        </button>
+      </footer>
+    </div>
+    <div id="success-message" class="success-message">
+      <p class="smessage">All user data has been deleted</p>
+    </div>
+  </body>
+</html>
